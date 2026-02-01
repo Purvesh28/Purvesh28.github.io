@@ -10,7 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
 </head>
 
 
@@ -35,7 +36,7 @@
 
         <a href="#projects" class="btn btn-primary me-2">View Projects</a>
         <a href="#impact" class="btn btn-primary me-2">View Impact</a>
-        <a href="assets/docs/PURVESH_DAVE_CV_2026.pdf" class="btn btn-outline-light">Download CV</a>
+        <a href="PURVESH_DAVE_CV_2026.pdf" class="btn btn-outline-light">Download CV</a>
         <a href="https://www.linkedin.com/in/purvesh-dave-7461871b4/" class="btn btn-outline-light">LinkedIn</a>
         <a href="https://github.com/Purvesh28" class="btn btn-outline-light">GitHub</a>
 
@@ -44,7 +45,7 @@
       </div>
 
       <div class="col-md-6 text-center">
-        <img src="assets/images/Puru Professional 1.png" class="profile-img" alt="Purvesh Dave">
+        <img src="Puru Professional 1.png" class="profile-img" alt="Purvesh Dave">
       </div>
 
     </div>
@@ -105,12 +106,20 @@
     <h2>Projects</h2>
 
     <div class="project-card">
-      <h4>Fleet Management System – NMDC</h4>
+      <h4>Fleet Management System(FMS) – NMDC</h4>
       <h6>Client: Central Government of India</h6>
 
       <ul>
-        <li>40% productivity increase</li>
-        <li>60% collision reduction</li>
+        <li>Designed and delivered an end-to-end fleet management platform for large-scale mining operations, integrating <strong>GPS</strong>, <strong>vehicle health monitoring systems</strong>, and multiple <strong>industrial-grade field sensors</strong> designed for harsh mining environments, Integrated in <strong>150+ Vehicles</strong> supporting real-time telemetry and <strong>safety-critical</strong> monitoring using heterogeneous hardware protocols.</li>
+        <li>Built real-time telemetry ingestion and processing pipelines handling hundreds of vehicles and <strong>100-200K of telemetry records per day</strong>, with near real-time dashboard updates and alerting.</li>
+        <li>Implemented fault-tolerant local storage and delayed synchronization, <strong>ensuring ~zero data loss</strong> during network outages and remote field connectivity issues.</li>
+        <li>Developed secure REST APIs enabling <strong>two-way communication between field units and a Central Command Center</strong> for live tracking, command execution, and system monitoring.</li>
+        <li>Engineered <strong>SOS detection</strong>, collision-risk indicators, and vehicle health monitoring system<strong>(VHMS)</strong>, significantly improving on-site safety and operational response times.</li>
+        <li>Designed and built interactive <strong>real-time dashboards</strong> for live fleet status, vehicle diagnostics, alerts, and historical analytics used by operational and safety teams.</li>
+        <li>Optimized backend services, data models, and ingestion workflows to support high-throughput telemetry writes while maintaining <strong>low-latency</strong> reads for live monitoring.</li>
+        <li>Collaborated directly with client engineering and operations teams during <strong>on-site POC</strong>, production rollout, and <strong>post-deployment support,</strong> <strong>owning the system end-to-end.</strong></li>
+        <li>Delivered measurable business impact, including <strong>~40% increase in operational productivity</strong> and <strong>~60% reduction in vehicle collision incidents</strong> across deployed mining sites.</li>
+
       </ul>
 
       <!-- MULTI IMAGE SLIDER -->
@@ -131,12 +140,18 @@
 
 
     <div class="project-card">
-      <h4>LDMS – MSEDCL</h4>
+      <h4>Local Data Monitoring System (LDMS) – MSEDCL</h4>
       <h6>Client: State Government of Maharashtra</h6>
 
       <ul>
-        <li>98% faster deployment</li>
-        <li>85% cost savings</li>
+        <li>Designed and delivered a production-grade <strong>real-time monitoring platform</strong> using Django and Flask, integrating <strong>IEC 60870-5-104 protocol</strong> with <strong>multiple RTU vendors</strong> in <strong>live power-distribution environments.</strong></li>
+        <li>Built high-frequency data ingestion pipelines processing hundreds of field devices with <strong>~1-second data accuracy</strong>, supporting continuous 24×7 operational monitoring.</li>
+        <li>Implemented fault-tolerant, offline-first data handling with buffering, retries, and delayed synchronization to ensure data integrity during unstable field conditions.</li>
+        <li>Engineered modular backend architecture separating protocol ingestion, processing, storage, and visualization layers, <strong>improving system maintainability and scalability.</strong></li>
+        <li>Developed <strong>Dynamic Single Line Diagrams (SLD)</strong>, real-time dashboards, historical trends, and energy flow aggregation for <strong>grid-level visibility and operational insights.</strong></li>
+        <li>Optimized database schemas, indexing, and write paths to support high-throughput telemetry ingestion and <strong>low-latency dashboard updates.</strong></li>
+        <li>Executed <strong>on-site POC deployments</strong> across multiple substations, ensuring protocol compatibility, system stability, and seamless integration with existing infrastructure.</li>
+        <li>Reduced development and on-site configuration <strong>time by ~98%</strong> and <strong>achieved ~85% cost savings to the organization</strong>, enabling faster rollout of monitoring systems across new & rural locations.</li>
       </ul>
 
       <!-- MULTI IMAGE SLIDER -->
@@ -144,11 +159,7 @@
         <button class="slider-btn left">&#10094;</button>
 
         <div class="slider-track">
-          <div class="slide-img"><img src="images/fleet1.jpg"></div>
-          <div class="slide-img"><img src="images/fleet2.jpg"></div>
-          <div class="slide-img"><img src="images/fleet3.jpg"></div>
-          <div class="slide-img"><img src="images/fleet4.jpg"></div>
-          <div class="slide-img"><img src="images/fleet5.jpg"></div>
+          <div class="slide-img"><img src="images/LDMS/img6.jpeg"></div>
         </div>
 
         <button class="slider-btn right">&#10095;</button>
@@ -192,10 +203,6 @@
 </body>
 
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </html>
-
-
-
-
